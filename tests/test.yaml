@@ -1,0 +1,13 @@
+appId: 'com.maestro.app'
+---
+- openLink: 'exp://127.0.0.1:8081'
+- tapOn:
+    id: input-email
+- inputText: 'example@example.com'
+- tapOn:
+    id: input-password
+- inputText: '12341234'
+- hideKeyboard
+- tapOn:
+    id: submit-button
+- assertVisible: 'Released access!'
